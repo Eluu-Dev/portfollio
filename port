@@ -1,0 +1,194 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #1a1d23;
+            color: white;
+            font-family: sans-serif;
+        }
+        .navbar-brand { font-weight: bold; font-size: 1.5rem; }
+        .nav-link { color: white !important; margin-left: 20px; }
+        .nav-link:hover { color: #00d2ff !important; }
+        
+        .hero-section {
+            padding: 100px 0;
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+        }
+        .highlight-text { color: #00d2ff; }
+        
+        .social-icons a {
+            color: #00d2ff;
+            font-size: 1.2rem;
+            border: 1px solid #00d2ff;
+            border-radius: 50%;
+            padding: 10px;
+            margin-right: 15px;
+            text-decoration: none;
+            transition: 0.3s;
+            display: inline-block;
+            width: 45px;
+            height: 45px;
+            text-align: center;
+        }
+        .social-icons a:hover {
+            background: #00d2ff;
+            color: #1a1d23;
+        }
+
+        .profile-img-container {
+            position: relative;
+            background: #00d2ff;
+            border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+            overflow: hidden;
+
+            html {
+    scroll-behavior: smooth;
+}
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent py-4">
+        <div class="container">
+            <a class="navbar-brand" href="#">Logo.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                   <ul class="navbar-nav">
+    <li class="nav-item"><a class="nav-link text-info" href="#">Home</a></li>
+    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+    <li class="nav-item"><a class="nav-link" href="#project">Portfolio</a></li>
+    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+</ul>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container hero-section">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h5 class="mb-3">Hi, It's Me</h5>
+                <h1 class="display-3 fw-bold mb-4">I'm <span class="highlight-text">elham</span></h1>
+                <p class="lead mb-4">
+                    Student specializing in Python programming and Internat programming (IP). 
+                    Focusing on creating mobile-responsive web experiences and graduating in 2027.
+                </p>
+                
+                <div class="social-icons mb-4">
+                    <a href="https://t.me/@elu_y6" target="_blank"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                
+
+            <div class="col-lg-6 text-center mt-5 mt-lg-0">
+                <div class="profile-img-container mx-auto" style="max-width: 400px;">
+                    <img src="ee.png" alt="Profile" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>  
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <div id="skills" class="container py-5">
+    <h2 class="text-center mb-5 fw-bold">My <span class="text-info">Skills</span></h2>
+    <div class="row g-4 text-center">
+        
+        <div class="col-md-4">
+            <div class="p-4 border border-info rounded shadow-sm h-100">
+                <i class="fab fa-python fa-3x text-info mb-3"></i>
+                <h3>Python</h3>
+                <p>Developing scripts and logic using Python for various data and automation tasks.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="p-4 border border-info rounded shadow-sm h-100">
+                <i class="fas fa-network-wired fa-3x text-info mb-3"></i>
+                <h3>IP & Tech</h3>
+                <p>Knowledge in Internat programming and internet protocols for network systems.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="p-4 border border-info rounded shadow-sm h-100">
+                <i class="fas fa-code fa-3x text-info mb-3"></i>
+                <h3>Web Design</h3>
+                <p>Creating mobile-responsive websites using HTML, CSS, and Bootstrap.</p>
+            </div>
+        </div>
+
+    </div>
+<div id="portfolio" class="container py-5">
+    <h2 class="text-center mb-5 fw-bold">My <span class="text-info">Project</span></h2>
+    <div class="row g-4">
+        
+        <div class="col-md-6 col-lg-4">
+            <div class="card bg-dark border-info h-100">
+                <img src="ee.png" class="card-img-top" alt="Project One">
+                <div class="card-body text-white">
+                    <h5 class="card-title fw-bold">Python Automation Tool</h5>
+                    <p class="card-text small">A Python script designed to automate daily Information Processing tasks.</p>
+                    <a href="" class="btn btn-outline-info">View Project</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <div class="card bg-dark border-info h-100">
+                <img src="project2.jpg" class="card-img-top" alt="Project Two">
+                <div class="card-body text-white">
+                    <h5 class="card-title fw-bold">Responsive Personal Website</h5>
+                    <p class="card-text small">This very portfolio website created using Bootstrap for mobile responsiveness.</p>
+                    <a href="" class="btn btn-outline-info">View Project</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <div class="card bg-dark border-info h-100">
+                <img src="project3.jpg" class="card-img-top" alt="Project Three">
+                <div class="card-body text-white">
+                    <h5 class="card-title fw-bold">IP Management System</h5>
+                    <p class="card-text small">Developing a small system to manage IP addresses and network data.</p>
+                    <a href=" https://github.com/Eluu-Dev/portfollio.git" class="btn btn-outline-info btn-sm">View Project</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="contact" class="container py-5 text-center">
+    <h2 class="fw-bold mb-4 text-white">Contact <span class="text-info">Me</span></h2>
+    
+    <div class="mt-4 text-white">
+        <p><i class="fab fa-telegram text-info"></i> 
+           <strong>Telegram:</strong> 
+           <a href="https://t.me/elu_y6" target="_blank" class="text-info text-decoration-none">@elu_y6</a>
+        </p>
+
+        <p><i class="fas fa-envelope text-info"></i> 
+           <strong>Email:</strong> 
+           <a href="mailto:elhamyimam47@gmail.com" class="text-info text-decoration-none">elhamyimam47@gmail.com</a>
+        </p>
+    </div>
+
+    <a href="https://t.me/elu_y6" target="_blank" class="btn btn-info mt-3 px-5 rounded-pill fw-bold">Send Message</a>
+</div>
+</body>
+</html> -->

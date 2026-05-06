@@ -1,197 +1,248 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        body {
-            background-color: #1a1d23;
-            color: white;
-            font-family: sans-serif;
-        }
-        .navbar-brand { font-weight: bold; font-size: 1.5rem; }
-        .nav-link { color: white !important; margin-left: 20px; }
-        .nav-link:hover { color: #00d2ff !important; }
-        
-        .hero-section {
-            padding: 100px 0;
-            min-height: 80vh;
-            display: flex;
-            align-items: center;
-        }
-        .highlight-text { color: #00d2ff; }
-        
-        .social-icons a {
-            color: #00d2ff;
-            font-size: 1.2rem;
-            border: 1px solid #00d2ff;
-            border-radius: 50%;
-            padding: 10px;
-            margin-right: 15px;
-            text-decoration: none;
-            transition: 0.3s;
-            display: inline-block;
-            width: 45px;
-            height: 45px;
-            text-align: center;
-        }
-        .social-icons a:hover {
-            background: #00d2ff;
-            color: #1a1d23;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elham | Portfolio</title>
 
-        .profile-img-container {
-            position: relative;
-            background: #00d2ff;
-            border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
-            overflow: hidden;
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-            html {
-    scroll-behavior: smooth;
+<style>
+html { scroll-behavior: smooth; }
+
+body {
+    background: #0f1115;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
 }
-        }
-    </style>
+
+.nav-link {
+    color: #ccc !important;
+    margin-left: 20px;
+}
+
+.nav-link:hover {
+    color: #00d2ff !important;
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.highlight {
+    color: #00d2ff;
+}
+
+.profile-box {
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #00d2ff;
+}
+
+.card {
+    background: #1a1d23;
+    color: white;
+    border: none;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title span {
+    color: #00d2ff;
+}
+
+footer {
+    border-top: 1px solid #222;
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+    color: #aaa;
+}
+</style>
+
 </head>
+
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent py-4">
-        <div class="container">
-            <a class="navbar-brand" href="#">Logo.</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                   <ul class="navbar-nav">
-    <li class="nav-item"><a class="nav-link text-info" href="#">Home</a></li>
-    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+<!-- NAVBAR -->
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+<div class="container">
+<a class="navbar-brand fw-bold" href="#">Elham</a>
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse justify-content-end" id="nav">
+<ul class="navbar-nav">
+<li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+<li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+<li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
 </ul>
-                </ul>
-            </div>
-        </div>
-    </nav>
+</div>
+</div>
+</nav>
 
-    <div class="container hero-section">
-        <div class="row align-items-center">
-            <div class="col-lg-6">
-                <h5 class="mb-3">Hi, It's Me</h5>
-                <h1 class="display-3 fw-bold mb-4">I'm <span class="highlight-text">elham</span></h1>
-                <p class="lead mb-4">
-                    Student specializing in Python programming and Internat programming (IP). 
-                    Focusing on creating mobile-responsive web experiences and graduating in 2027.
-                </p>
-                
-                <div class="social-icons mb-4">
-                    <a href="https://t.me/@elu_y6" target="_blank"><i class="fab fa-telegram"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                </div>
+<!-- HERO -->
 
-                <a href="#" class="btn btn-info px-4 py-2 rounded-pill fw-bold">Download CV</a>
-            </div>
+<section id="home" class="hero container">
+<div class="row align-items-center">
 
-            <div class="col-lg-6 text-center mt-5 mt-lg-0">
-                <div class="profile-img-container mx-auto" style="max-width: 400px;">
-                    <img src="ee.png" alt="Profile" class="img-fluid">
-                </div>
-            </div>
-        </div>
-    </div>  
+<div class="col-lg-6">
+<h5>Hello 👋</h5>
+<h1 class="display-3 fw-bold">I'm <span class="highlight">Elham</span></h1>
+<p class="lead">
+Python Developer & Web Designer focused on building simple and responsive websites.
+</p>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-    <div id="skills" class="container py-5">
-    <h2 class="text-center mb-5 fw-bold">My <span class="text-info">Skills</span></h2>
-    <div class="row g-4 text-center">
-        
-        <div class="col-md-4">
-            <div class="p-4 border border-info rounded shadow-sm h-100">
-                <i class="fab fa-python fa-3x text-info mb-3"></i>
-                <h3>Python</h3>
-                <p>Developing scripts and logic using Python for various data and automation tasks.</p>
-            </div>
-        </div>
-
-        <div class="col-md-4">
-            <div class="p-4 border border-info rounded shadow-sm h-100">
-                <i class="fas fa-network-wired fa-3x text-info mb-3"></i>
-                <h3>IP & Tech</h3>
-                <p>Knowledge in Internat programming and internet protocols for network systems.</p>
-            </div>
-        </div>
-
-        <div class="col-md-4">
-            <div class="p-4 border border-info rounded shadow-sm h-100">
-                <i class="fas fa-code fa-3x text-info mb-3"></i>
-                <h3>Web Design</h3>
-                <p>Creating mobile-responsive websites using HTML, CSS, and Bootstrap.</p>
-            </div>
-        </div>
-
-    </div>
-<div id="portfolio" class="container py-5">
-    <h2 class="text-center mb-5 fw-bold">My <span class="text-info">Project</span></h2>
-    <div class="row g-4">
-        
-        <div class="col-md-6 col-lg-4">
-            <div class="card bg-dark border-info h-100">
-                <img src="ee.png" class="card-img-top" alt="Project One">
-                <div class="card-body text-white">
-                    <h5 class="card-title fw-bold">Python Automation Tool</h5>
-                    <p class="card-text small">A Python script designed to automate daily Information Processing tasks.</p>
-                    <a href="https://eluu-dev.github.io/python-managment/" class="btn btn-outline-info">View Project</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
-            <div class="card bg-dark border-info h-100">
-                <img src="project2.jpg" class="card-img-top" alt="Project Two">
-                <div class="card-body text-white">
-                    <h5 class="card-title fw-bold">Responsive Personal Website</h5>
-                    <p class="card-text small">This very portfolio website created using Bootstrap for mobile responsiveness.</p>
-                    <a href="https://eluu-dev.github.io/my-port-folio/" class="btn btn-outline-info">View Project</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
-            <div class="card bg-dark border-info h-100">
-                <img src="project3.jpg" class="card-img-top" alt="Project Three">
-                <div class="card-body text-white">
-                    <h5 class="card-title fw-bold">IP Management System</h5>
-                    <p class="card-text small">Developing a small system to manage IP addresses and network data.</p>
-                    <a href=" https://eluu-dev.github.io/ip-managment/" class="btn btn-outline-info btn-sm">View Project</a>
-                </div>
-            </div>
-        </div>
-
-    </div>
+<div class="mt-3">
+<a href="https://t.me/elu_y6" class="text-info me-3"><i class="fab fa-telegram"></i></a>
+<a href="#" class="text-info me-3"><i class="fab fa-github"></i></a>
+<a href="#" class="text-info"><i class="fab fa-linkedin"></i></a>
+</div>
 </div>
 
-<div id="contact" class="container py-5 text-center">
-    <h2 class="fw-bold mb-4 text-white">Contact <span class="text-info">Me</span></h2>
-    
-    <div class="mt-4 text-white">
-        <p><i class="fab fa-telegram text-info"></i> 
-           <strong>Telegram:</strong> 
-           <a href="https://t.me/elu_y6" target="_blank" class="text-info text-decoration-none">@elu_y6</a>
-        </p>
-
-        <p><i class="fas fa-envelope text-info"></i> 
-           <strong>Email:</strong> 
-           <a href="mailto:elhamyimam47@gmail.com" class="text-info text-decoration-none">elhamyimam47@gmail.com</a>
-        </p>
-    </div>
-
-    <a href="https://t.me/elu_y6" target="_blank" class="btn btn-info mt-3 px-5 rounded-pill fw-bold">Send Message</a>
+<div class="col-lg-6 text-center mt-5">
+<div class="profile-box mx-auto" style="width:250px;">
+<img src="eee.png" class="img-fluid">
 </div>
+</div>
+
+</div>
+</section>
+
+<!-- ABOUT -->
+
+<section id="about" class="container py-5">
+<div class="section-title">
+<h2>About <span>Me</span></h2>
+</div>
+
+<p class="text-center w-75 mx-auto">
+I am a student learning Python and web development. I enjoy building simple websites and solving problems using code.
+</p>
+</section>
+
+<!-- SKILLS (FIXED) -->
+
+<section id="skills" class="container py-5">
+<div class="section-title">
+<h2>My <span>Skills</span></h2>
+</div>
+
+<div class="row text-center g-4">
+
+<div class="col-md-4">
+<div class="card p-4 text-white">
+<i class="fab fa-python fa-3x text-info"></i>
+<h4 class="mt-3">Python</h4>
+<p class="mt-2" style="color:#ddd;">
+I use Python to write programs, automate tasks, and solve problems.
+</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card p-4 text-white">
+<i class="fas fa-globe fa-3x text-info"></i>
+<h4 class="mt-3">Web Development</h4>
+<p class="mt-2" style="color:#ddd;">
+I build websites using HTML, CSS, and Bootstrap that work on all devices.
+</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card p-4 text-white">
+<i class="fas fa-network-wired fa-3x text-info"></i>
+<h4 class="mt-3">Networking</h4>
+<p class="mt-2" style="color:#ddd;">
+I understand networking basics like IP addresses and how the internet works.
+</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- PROJECTS -->
+
+<section id="projects" class="container py-5">
+<div class="section-title">
+<h2>My <span>Projects</span></h2>
+</div>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+<div class="card">
+<img src="auto.png" class="card-img-top">
+<div class="card-body">
+<h5>Automation Tool</h5>
+<p>A specialized Python automation script designed to handle repetitive computer tasks, saving time and reducing manual errors</p>
+<a href="#" class="btn btn-outline-info btn-sm">View Project</a>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card">
+<img src="gr.png" class="card-img-top">
+<div class="card-body">
+<h5> grading system Website</h5>
+<p>An automated academic management tool that simplifies the process of recording student scores and generating performance reports."</p>
+<a href="https://github.com/Eluu-Dev/grade-managment.git" class="btn btn-outline-info btn-sm">View Project</a>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card">
+<img src="ip.png" class="card-img-top">
+<div class="card-body">
+<h5>IP Management System</h5>
+<p>"An IP Management System built with Python that helps network administrators automate the process of recording and monitoring IP address assignments within a local network.".</p>
+<a href="#" target="_blank" class="btn btn-outline-info btn-sm">
+View Project
+</a>
+</div>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact" class="container py-5 text-center">
+<div class="section-title">
+<h2>Contact <span>Me</span></h2>
+</div>
+
+<p>Email: <a href="mailto:elhamyimam47@gmail.com" class="text-info">elhamyimam47@gmail.com</a></p>
+<p>Telegram: <a href="https://t.me/elu_y6" class="text-info">@elu_y6</a></p>
+</section>
+
+<footer>
+<p>© 2026 Elham | All Rights Reserved</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
